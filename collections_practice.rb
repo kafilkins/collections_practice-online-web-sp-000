@@ -41,3 +41,14 @@ end
 def sum_array(integers)
   integers.inject{|sum, n| sum + n}
 end
+
+def add_s(array)
+  array.each_with_index do |element, index|
+    if index == 1
+      element
+    else
+      element << "s"
+    end
+  end
+end
+  
