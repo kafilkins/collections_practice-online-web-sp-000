@@ -25,10 +25,11 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  kesha = []
+  arrays = []
   array.each do |word|
     word_array = word.split ""
     word_array[2] = "$"
-    kesha << word_array.join
+    arrays << word_array.join
   end
+  arrays
 end
