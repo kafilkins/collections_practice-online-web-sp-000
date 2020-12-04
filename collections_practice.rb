@@ -5,6 +5,7 @@ def sort_array_asc(integers)
 end
 
 def sort_array_desc(integers)
-  integers.sort! {|x, y| x <=> y}
-  puts integers
-    end
+  integers.sort do |b, a|
+    b <=> a
+  end
+end
