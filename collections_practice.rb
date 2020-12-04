@@ -4,6 +4,7 @@ def sort_array_asc(integers)
   end
 end
 
-def sort_array_desc()
-  integers.sort_by.reverse
-  end
+def sort_array_desc(integers)
+  integers.sort! {|x, y| y <=> x}
+  puts integers
+    end
